@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WorkerProvider"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".occupations.GuardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".occupations.BarberActivity"
+            android:exported="false" />
+        <activity
+            android:name=".occupations.CarpenterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".occupations.CookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".occupations.DriverActivity"
+            android:exported="false" />
+        <activity
+            android:name=".occupations.ElectricianActivity"
+            android:exported="false" />
+        <activity
+            android:name=".occupations.LabourActivity"
+            android:exported="false" />
+        <activity
+            android:name=".occupations.MaidActivity"
+            android:exported="false" />
+        <activity
+            android:name=".occupations.PainterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".occupations.PlumberActivity"
+            android:exported="false" />
+        <activity
+            android:name=".occupations.SalesManActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".WorkerEditDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WorkerProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WorkerDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EmployerProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewWorkerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WorkerRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EmployerForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EmployerSignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EmployerLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

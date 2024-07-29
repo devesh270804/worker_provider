@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:background="#FEFEFE">
+
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="200dp"
+            android:layout_height="180dp"
+            android:contentDescription="@string/image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.003"
+            app:srcCompat="@drawable/img_3" />
+
+        <EditText
+            android:id="@+id/editText_PhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:background="#A3A5C9D7"
+            android:ems="10"
+            android:hint="Enter phone number"
+            android:inputType="phone"
+            android:paddingStart="16dp"
+            android:paddingTop="15dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="#420606"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintBottom_toTopOf="@+id/goToProfileButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_OTP2"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+            android:id="@+id/editText_OTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/adamina"
+            android:paddingStart="16dp"
+            android:paddingTop="15dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="10dp"
+            android:text="Haven't created your account yet ? \n Go to create profile. \n"
+            android:textColor="@color/black"
+            android:textColorHint="#420606"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/createProfileButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            app:layout_constraintVertical_bias="0.65" />
+
+        <TextView
+            android:id="@+id/editText_OTP2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/adamina"
+            android:paddingStart="16dp"
+            android:paddingTop="15dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="10dp"
+            android:text="Already have created your profile ? \n Enter number to go to your profile. \n"
+            android:textColor="@color/black"
+            android:textColorHint="#420606"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/goToProfileButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/createProfileButton"
+            app:layout_constraintVertical_bias="0.365" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/goToProfileButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background_3"
+            android:text="Go to your profile"
+            android:textColor="#2E161F"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/createProfileButton"
+            app:layout_constraintVertical_bias="0.812" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/createProfileButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background_3"
+            android:text="Create  Profile"
+            android:textColor="#2E161F"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            app:layout_constraintVertical_bias="0.288" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

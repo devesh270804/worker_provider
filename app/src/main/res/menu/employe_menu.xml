@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/profile"
+        android:title="@string/your_profile"
+        app:showAsAction="withText"/>
+
+    <item
+        android:id="@+id/logOut"
+        android:title="@string/log_out"
+        app:showAsAction="withText"
+        android:icon="@drawable/ic_logout"/>
+    <item
+        android:id="@+id/backToLogin"
+        android:title="@string/back"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/baseline_arrow_back_ios_24"/>
+
+
+</menu>

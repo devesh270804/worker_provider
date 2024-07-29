@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.WorkerProvider" parent="Theme.Material3.DayNight">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimaryDark">@color/brown</item>
+        <item name="actionBarStyle">@style/CustomActionBar</item>
+        
+    </style>
+    <style name="CustomActionBar" parent="@style/Widget.Material3.ActionBar.Solid">
+        <item name="background">@color/new_color</item>
+        <item name="titleTextStyle">@style/CustomActionBarTitle</item>
+    </style>
+
+    <style name="CustomActionBarTitle" parent="TextAppearance.Material3.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="title">@string/app_name</item>
+    </style>
+
+    <style name="Theme.WorkerProvider" parent="Base.Theme.WorkerProvider" />
+</resources>
